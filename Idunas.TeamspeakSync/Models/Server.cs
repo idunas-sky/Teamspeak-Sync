@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace Idunas.TeamspeakSync.Models
 {
 	public class Server
 	{
+		[Key]
 		public int Server_Id { get; set; }
 
 		public uint Server_Port { get; set; }
