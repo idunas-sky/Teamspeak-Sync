@@ -12,6 +12,8 @@ namespace Idunas.TeamspeakSync.Service
 		protected override void OnStart( string[] args )
 		{
 			base.OnStart( args );
+
+			SyncManager.Start();
 		}
 
 		protected override void OnStop()
